@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class daireAlanOdev {
+    public static void main(String[] args) {
+        double yaricapi, cevre, alan, aci;
+        double pi=3.14;
+        Scanner inp=new Scanner(System.in);
+        System.out.print( "Dairenin Yarı Çapı : ");
+        yaricapi=inp.nextDouble();
+        cevre= 2*pi*yaricapi;
+        System.out.println( "Daire Çevresi : " + cevre);
+        alan=pi*yaricapi*yaricapi;
+        System.out.println( "Daire Alanı : " +alan);
+        System.out.print( "Daire Diliminin Açısı : ");
+        aci=inp.nextDouble();
+        double dilimAlani= (pi*(yaricapi*yaricapi)*aci)/360;
+        System.out.print( "Dilimin Alanı:" +dilimAlani);
+    }
+}
